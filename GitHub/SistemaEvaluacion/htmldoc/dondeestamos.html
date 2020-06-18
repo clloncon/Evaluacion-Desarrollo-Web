@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/JQuery/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../assets/css/styledondeestamos.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+        <!-- -----------------------------------header----------------------------------- -->
+        <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="bestprofe.html">MejorProfesor</a>
+                    <a href="comenta.html">Comenta</a>
+                    <a href="buscador.html">BuscaTuProfe</a>
+                    <a href="quienessomos.html">QuienesSomos</a>
+                    <a id="usuario">Log-in</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- -------------------------------------banber-------------------------------------------------- -->
+
+
+            <section id="contenedor">
+                <article class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13318.641284685042!2d-70.6337228953247!3d-33.43209913816344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdfc77b57f9729081!2sAv.%20Sta.%20Mar%C3%ADa%20816%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1592278799550!5m2!1ses!2scl"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </article>
+
+                <article id="formulariodecontacto">
+                    <form action="" onsubmit="return false">
+
+                        <legend>Formulario de contacto</legend>
+                        <h1>Contactanos</h1><br>
+                        <input type="text" placeholder="Ingrese su nombre"><br>
+                        <input type="email" placeholder="Ingrese su correo electronico"><br>
+                        <textarea name="detalles" id="detalle" cols="30" rows="6" placeholder="Comente mejoras..."></textarea><br>
+                        <button id="boton"> Enviar Datos</button>
+
+                    </form>
+
+
+                </article>
+            </section>
+
+            <div id="dialog1" title="Log-out">
+                <p> "te has deslogueado, adios maldita lisiada"</p>
+            </div>
+
+            <div id="dialog2" title="Gracias por tu feedback">
+                <p> "Hemos recibido tu mensaje, jamas lo leeremos pero apreciamos el tiempo que te tomaste"</p>
+            </div>
+
+        </main>
+        <!-- -------------------------------------Footer-------------------------------------------------- -->
+
+
+        <footer>
+            <div class="contenedor">
+                <p class="copy">Copyrigth &copy 2020, Awakelab studios.</p>
+            </div>
+        </footer>
+
+        <script src="../assets/js/dondeestamos.js"></script>
+        <script src="../assets/js/login.js"></script>
+    </body>
+</body>
+
+</html>

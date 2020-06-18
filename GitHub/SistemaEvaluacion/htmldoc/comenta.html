@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comenta</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/stylecomenta.css">
+    <script src="../assets/jQuery/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="../assets/js/rankeo.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+
+<body>
+
+    <body>
+        <!-- -----------------------------------header----------------------------------- -->
+        <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+
+                    <a href="blog.html">Blog</a>
+                    <a href="bestprofe.html">MejorProfesor</a>
+
+                    <a href="buscador.html">BuscaTuProfe</a>
+                    <a href="quienessomos.html">QuienesSomos</a>
+                    <a href="dondeestamos.html">Contacto</a>
+                    <a id="usuario">Log-in</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- -------------------------------------Formulario-------------------------------------------------- -->
+            <div class="contenedorform">
+                <div class="card">
+                    <form class="contact_form" action="#" id="contact_form" onsubmit="return false">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h2>Comenta</h2>
+                                    <span class="required_notification">* Datos requeridos</span>
+                                </li>
+                                <li>
+                                    <label for="name">Quien eres:</label>
+                                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required />
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="correo" name="email" placeholder="info@awakelab.com" required />
+                                    <span class="form_hint">Formato correcto: "name@tucorreo.com"</span>
+                                </li>
+                                <li>
+                                    <label for="name">Nombre Profesor:</label>
+                                    <input type="text" id="nombreprofe" placeholder="Nombre del profesor" required />
+                                </li>
+                                <li>
+                                    <label for="name">Universidad:</label>
+                                    <input type="text" id="universidad" placeholder="Universidad en la que se imparte" required />
+                                </li>
+                                <li>
+                                    <label for="name">asignatura:</label>
+                                    <input type="text" id="asignatura" placeholder="Asignatura que realiza" required />
+                                </li>
+
+
+                                <li>
+                                    <label for="message">Comenta:</label>
+                                    <textarea name="message" id="comentario" cols="40" rows="6" required></textarea>
+                                </li>
+                                <li>
+                                    <div id="rank">
+                                        <h3>Rankea: </h3>
+                                        <div id="rankeoComent"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input class="submit" id="enviar" value="Enviar mensaje" type="submit">
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <table id="datatable" class="display">
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Nombre Profesor</th>
+                        <th>Universidad</th>
+                        <th>Asignatura</th>
+                        <th>Comentario</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Juan Manuel Villalba</td>
+                        <td>Instituto Aplaplac</td>
+                        <td>fisica</td>
+                        <td>Muy mala experiencia, no aprendi nada, mala metodologia</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Angelica San Martin</td>
+                        <td>Universidad de Shule</td>
+                        <td>termodinamica</td>
+                        <td>Fue una experiencia maravillosa, preocupada de sus alumnos</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Augusto Granados</td>
+                        <td>Universidad de Shule</td>
+                        <td>calculo 3</td>
+                        <td>Es un profesor con una metodologia anticuada, no es recomendable para gente joven</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Clotilde Montoya</td>
+                        <td>Universidad de Shule</td>
+                        <td>Sociologia</td>
+                        <td>Sus clases son monotonas, lo que las hace muy aburridas</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Eugenio Ruz</td>
+                        <td>Universidad de Shule</td>
+                        <td>Programacion</td>
+                        <td>Mal profesor, no tiene disposición de enseñar</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Robert Perez</td>
+                        <td>Universidad de Shule</td>
+                        <td>fisica 2</td>
+                        <td>No logre tomarle el ritmo a sus clases, me aburria y perdia la concentracion</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Monica Carro</td>
+                        <td>Universidad de Shule</td>
+                        <td>Programacion</td>
+                        <td>Gran profesor, mucha dedicacion en cada clase</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Isidora Martinez</td>
+                        <td>Universidad de Shule</td>
+                        <td>Programacion</td>
+                        <td>En general solo explica teoria y no muestra ejemplos practicos</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Amaya Mayor</td>
+                        <td>Universidad de Shule</td>
+                        <td>fisica</td>
+                        <td>Pesima metodologia educativa</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Juan Manuel Villalba</td>
+                        <td>Instituto Aplaplac</td>
+                        <td>fisica</td>
+                        <td>Es un profesor regular, si se esforzara mas podria ser top</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Brian Guzman</td>
+                        <td>Awakelab</td>
+                        <td>programacion</td>
+                        <td>El dios</td>
+                    </tr>
+                    <tr>
+                        <td>Juanin Juan Harry </td>
+                        <td>juaninjuanharry@aplapac.cl</td>
+                        <td>Oscar Gonzalez</td>
+                        <td>Awakelab</td>
+                        <td>programacion</td>
+                        <td>Buenas clases, se esfuerza</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="dialog1" title="Log-out">
+                <p> "te has deslogueado, adios maldita lisiada"</p>
+            </div>
+
+        </main>
+        <!-- -------------------------------------Footer-------------------------------------------------- -->
+
+        <footer>
+            <div class="contenedor">
+                <p class="copy">Copyrigth &copy 2020, Awakelab studios.</p>
+            </div>
+        </footer>
+
+        <script src="../assets/js/login.js"></script>
+        <script src="../assets/js/comenta.js"></script>
+    </body>
+</body>
+
+</html>

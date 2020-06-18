@@ -1,0 +1,38 @@
+#profe{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
+}
+#mainprofe{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(1,6,2,0.3085609243697479) 100%);
+}
+
+img{
+    border-style: inset;
+    border-top: 4px solid rgba(123, 199, 0, 0.753);
+    border-right: 4px solid rgba(0, 0, 0, 0.836);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.836);
+    border-left: 4px solid rgba(123, 199, 0, 0.753);
+    
+}
+#contenedorimgP{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+#infoP{
+    padding-top: 3em;
+    margin-left: 1em;
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best profe</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/stylebest.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <script src="../assets/js/js/jquery-3.5.1.js"></script>
+    <script src="../assets/js/js/chart.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <body></body>
+    <!-- -----------------------------------header----------------------------------- -->
+    <header>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-bar">
+            <label class="fontawesome-align-justify" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="blog.html">Blog</a>
+                <a href="comenta.html">Comenta</a>
+                <a href="buscador.html">BuscaTuProfe</a>
+                <a href="quienessomos.html">QuienesSomos</a>
+                <a href="dondeestamos.html">Contacto</a>
+                <a id="usuario">Log-in</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- -------------------------------------banber-------------------------------------------------- -->
+
+        <h2>Graficas de comparacion de profesores</h2>
+        <p>Compracion de profesores</p>
+
+        <div class="tab">
+            <button class="tablinks active" onclick="opengrafico(event, 'Barras')">Grafico de barras</button>
+            <button class="tablinks" onclick="opengrafico(event, 'Lineas')">Grafico de lineas</button>
+            <button class="tablinks" onclick="opengrafico(event, 'Tortas')">Grafico de torta</button>
+        </div>
+
+        <div id="Barras" class="tabcontent" style="display:block">
+            <h3>Mejores profesores</h3>
+            <p>Notas por profesor</p>
+            <div class="graficos">
+                <canvas id="graficoBarras"></canvas>
+            </div>
+        </div>
+
+        <div id="Lineas" class="tabcontent">
+            <h3>Compartiva entre semestres</h3>
+            <p>Comparativa de notas que se le han otorgado a los profesores, antes y despues de la creacion de la plataforma </p>
+            <canvas id="graficoLineas"></canvas>
+        </div>
+
+        <div id="Tortas" class="tabcontent">
+            <h3>Metricas de skill del mejor profesor</h3>
+            <p>Nota entre las diferentes fortalezas y devilidades de profesor con maximo puntaje </p>
+            <canvas id="graficoTorta"></canvas>
+        </div>
+
+
+        <div id="dialog1" title="Log-out">
+            <p> "te has deslogueado, adios maldita lisiada"</p>
+        </div>
+
+
+    </main>
+    <!-- -------------------------------------Footer-------------------------------------------------- -->
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Copyrigth &copy 2020, Awakelab studios.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/best.js"></script>
+
+</body>
+
+</html>

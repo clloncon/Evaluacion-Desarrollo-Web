@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/stylelog.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.16.0/js/md5.js"></script>
+    <script src="../assets/JQuery/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+    <body>
+        <div id="form_log">
+            <div id="form_left">
+                <img src="../assets/img/mascara-medica.svg" alt="computer icon">
+            </div>
+            <div id="form_right">
+                <h1>Entrar a SapeaTuProfe</h1>
+
+                <div class="input_container">
+                    <i class="fas fa-envelope"></i>
+                    <input placeholder="Correo Electronico" type="email" name="Email" id="field_email" class="input_field">
+                </div>
+                <div class="input_container">
+                    <i class="fas fa-lock"></i>
+                    <input placeholder="Contraseña" type="password" name="Password" id="field_password" class="input_field">
+                </div>
+                <form method="POST" onsubmit="return false">
+                    <input type="submit" value="Entrar" id="input_submit" class="input_field">
+                </form>
+
+                <span>Te Perdiste <a href="#"> Correo / Contraseña ?</a></span>
+                <span id="create_account">
+                    <a id = "create-user" href="#">Crea tu cuenta en sapeatuprofe.cl ➡ </a>
+                </span>
+            </div>
+        </div>
+
+        <div id="dialog-form" title="Create new user">
+            <p class="validateTips">Todos los campos del formulario son requeridos.</p>
+
+            <form>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all"><br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="text ui-widget-content ui-corner-all">
+
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="dialog1" title="Failed Log in">
+            <p>Wrong User</p>
+        </div>
+
+        <div id="dialog2" title="Failed Log in">
+            <p>Wrong Password</p>
+        </div>
+
+    </body>
+    <script src="../assets/js/menu.js"></script>
+</body>
+
+</html>

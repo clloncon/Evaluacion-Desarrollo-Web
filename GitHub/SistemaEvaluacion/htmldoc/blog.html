@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styleblog.css">
+    <script src="../assets/JQuery/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="../assets/js/rankeo.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <body>
+        <!-- -----------------------------------header----------------------------------- -->
+        <header>
+            <div class="contenedor">
+                <input type="checkbox" id="menu-bar">
+                <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="bestprofe.html">MejorProfesor</a>
+                    <a href="comenta.html">Comenta</a>
+                    <a href="buscador.html">BuscaTuProfe</a>
+                    <a href="quienessomos.html">QuienesSomos</a>
+                    <a href="dondeestamos.html">Contacto</a>
+                    <a id="usuario">Log-in</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <!-- <section class="contenedor-titulo">
+                <h1>Reseña de los profesores</h1>
+            </section> -->
+
+
+            <!-- -------------------------------------blog-------------------------------------------------- -->
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/profjpg/Brian.jpg" alt="">
+                        </a>
+                        <h2>Brian Guzman</h2>
+                        <h4>Ingeniero en Ingenieria Ingeniosa - Universidad de la vida</h4>
+                    </div>
+                    <div class="comentario">
+                        <p>un Awaker con agallas, educado y muy diciplinado en sus clases, yo creo que si vas a optar por un buen profesor opta por el.-</p>
+                        <p><b>Comentario Realizado:</b> Rigoberto Mandioca, cursó Full-Stack jabali</p>
+                        <div id="brian"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/profjpg/58.jpg" alt="">
+                        </a>
+                        <h2>Juan Manuel Villalba</h2>
+                        <h4>Ingeniero Civil - Universidad de Chile 2003 / Doctor - Universidad de Chile 2009</h4>
+                    </div>
+                    <div class="comentario">
+                        <p>Profesor con grandes principios, con una gran oratoria y sentido social. Ademas de comprensivo, puntual y empatico.-</p>
+                        <p><b>Comentario Realizado:</b> Larabel Marinela, cursó calculo I</p>
+                        <div id="juanMa"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/profjpg/Oscar.jpg" alt="">
+                        </a>
+                        <h2>Oscar Gonzalez</h2>
+                        <h4>Ingeniero en Informatica de la Informacion Informativa - Universidad universal del universo</h4>
+                    </div>
+                    <div class="comentario">
+                        <p>Profesor suele discutir sobre sopaipillas, pero fuera de eso bien comprometido con su trabajo
+                        </p>
+                        <p><b>Comentario Realizado:</b> Contemplo Palacios, cursó desarollo de aplicaciones aplicables</p>
+                        <div id="oscar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/profjpg/48.jpg" alt="">
+                        </a>
+                        <h2>Angelica San Martin</h2>
+                        <h4>Postdoctoral Associate - University of Minnesota 2014 Postdoctoral Research Associate </h4>
+                    </div>
+                    <div class="comentario">
+                        <p>Profesora muy comprometida con su labor como educadora, tanto dentro como fuera del aula. Un par de veces ha perdido ensayos que le entregué, pero confió en que los habia entregado y pudimos solucinarlo.</p>
+                        <p><b>Comentario Realizado:</b> Florinda Ventisquero, cursó calculo II</p>
+                        <div id="angelica"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/profjpg/64.jpg" alt="">
+                        </a>
+                        <h2>Augusto Granados</h2>
+                        <h4> Ingeniero Civil - Universidad de Chile 19977</h4>
+                    </div>
+                    <div class="comentario">
+                        <p>Profesor con mal caracter, pero muy sabio.</p>
+                        <p><b>Comentario Realizado:</b> Serio Cortina, cursó programacion IV</p>
+                        <div id="augusto"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/profjpg/59.jpg" alt="">
+                        </a>
+                        <h2>Nazaret Jimenez</h2>
+                        <h4>Ingeniero Civil - Universidad de Chile 1998</h4>
+                    </div>
+                    <div class="comentario">
+                        <p>Profesora dedicada pero de trato frio, a ratos poco empatica. Buena oratoria, pero demasiado extensas</p>
+                        <p><b>Comentario Realizado:</b> Rigofacio Piramidal, cursó antropologia</p>
+                        <div id="nazaret"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blog-contenedor">
+                <div class="card">
+                    <div class="header">
+                        <a href="#">
+                            <img src="../assets/img/babyyoda1.jpg" alt="">
+                        </a>
+                        <h2>Don yodita</h2>
+                        <h4>Maestro de maestros</h4>
+                    </div>
+                    <div class="comentario">
+                        <p>Sin lugar a dudas, el mejor en la fuerza</p>
+                        <div id="yodita"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dialog1" title="Log-out">
+                <p> "te has deslogueado, adios maldita lisiada"</p>
+            </div>
+
+
+
+
+        </main>
+        <!-- -------------------------------------Footer-------------------------------------------------- -->
+
+        <footer>
+            <div class="contenedor">
+                <p class="copy">Copyrigth &copy 2020, Awakelab studios.</p>
+            </div>
+        </footer>
+
+        <script src="../assets/js/login.js"></script>
+        <!-- <script src="../assets/js/menu.js"></script> -->
+    </body>
+</body>
+
+</html>

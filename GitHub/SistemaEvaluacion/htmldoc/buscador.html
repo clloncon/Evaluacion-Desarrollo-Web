@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/buscador.css">
+    <script src="../assets/jQuery/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+
+
+<body>
+    <!-- -----------------------------------header----------------------------------- -->
+    <header>
+        <div class="contenedor">
+            <input type="checkbox" id="menu-bar">
+            <label class="fontawesome-align-justify" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="blog.html">Blog</a>
+                <a href="bestprofe.html">MejorProfesor</a>
+                <a href="comenta.html">Comenta</a>
+                <a href="quienessomos.html">QuienesSomos</a>
+                <a href="dondeestamos.html">Contacto</a>
+                <a id="usuario">Log-in</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- -------------------------------------banner-------------------------------------------------- -->
+
+        <section id="banner">
+
+            <img src="../assets/img/Fondo-Banner.png">
+            <div class="contenedor">
+                <h2>Buscador</h2>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- <h2>Profesores:</h2> -->
+            <input type="text" id="search" placeholder="Busque por nombre, universidad o asignatura ...">
+            <div id="fotos">
+                <div class="clear"></div>
+
+                <div id="template" class="user-card">
+                    <div class="user-image">
+                        <!-- <img src=""> -->
+                    </div>
+                    <div class="user-info">
+                        <h4 class="name"></h4>
+                        <h5 class="age"></h5>
+                    </div>
+                </div>
+
+                <p class="not-found">
+                    No se encontraron profesores, por favor cambie el criterio de busqueda
+                </p>
+
+                <section id="users">
+                </section>
+            </div>
+
+
+            <div id="dialog1" title="Log-out">
+                <p> "te has deslogueado, adios maldita lisiada"</p>
+            </div>
+        </div>
+    </main>
+    <!-- -------------------------------------Footer-------------------------------------------------- -->
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Copyrigth &copy 2020, Awakelab studios.</p>
+        </div>
+    </footer>
+
+
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/buscador.js"></script>
+</body>
+
+
+</html>
